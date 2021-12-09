@@ -1,1 +1,266 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.js"></script>
+    <style>
+		body{
+			background-image: url(img/bg.svg);
+		}
+		.row{
+			display: flex;
+			justify-content: center;
+		}
+		.prod_blok{
+			margin: 2%;
+			text-align: center;
+		}
+		.prod_blok img{
+			width: 100%;
+		}
+		.prod_blok .foot{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
+		.prod_blok input{
+			background: none;
+			border: none;
+			color: #fff;
+			font-size: 1.3em;
+			font-weight: bold;
+			margin-bottom: 4%;
+			flex: none;
+			width: 100%;
+			text-align: center;
+		}
+		.prod_blok button{
+			background-color: #FBCE32;
+			color: #05475E;
+			border: 1px solid #FBCE32;
+			border-radius: 10px;
+			width: 50%;
+			height: 35px;
+			cursor: pointer;
+			font-weight: bold;
+			font-family: Roboto;
+			font-size: 1em;
+		}
+		.prod_blok button:hover{
+			background-color:#FF9900;
+			color:#fff;
+			border: 1px solid #FF9900;
+		}
+		.plus{
+			width: 25%;
+			text-decoration: none;
+			color: #FBCE32;
+			font-size: 2em;
+			font-weight: bold;
+		}
+		.minus{
+			width: 25%;
+			text-decoration: none;
+			color: #FBCE32;
+			font-size: 2em;
+			font-weight: bold;
+		}
+    </style>
+  @media ( max-width: 980px ) {
+			body{
+				background-repeat: repeat-y;
+			}
+			.row {
+				flex-wrap: wrap;
+			}
+			.prod_blok {
+				flex: 1 1 25%;
+			}
+			.prod_blok img:nth-child(1) {
+				width: 101%;
+				height:235px;
+			} 
+
+
+		}
+		@media ( max-width: 800px ) {
+			body{
+				background-repeat: repeat-y;
+			}
+			.row {
+				flex-wrap: wrap;
+			}
+			.prod_blok {
+				flex: 1 0 22%;
+			}
+			.prod_blok img:nth-child(1) {
+				width: 101%;
+				height:235px;
+			} 
+
+
+		}
+		@media ( max-width: 600px ) {
+			body{
+				background-repeat: repeat-y;
+			}
+			.row {
+				flex-wrap: wrap;
+			}
+			.prod_blok {
+				flex: 1 0 34%;
+			}
+			.prod_blok img:nth-child(1) {
+				width: 101%;
+				height:235px;
+			} 
+		}
+</head>
+<body>
+	
+	
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.js"></script>
+	<div class="row">
+       <div class="prod_blok">
+			<img src="img/1.png" alt="альтернативный текст"><br>
+			<div class="foot">
+				<input type="text" id="id-1" size="1" value="3000" name="3000" readonly><br>
+				<a class="minus increment" href="#">-</a>
+				<button>BUY</button>
+				<a class="plus increment" href="#">+</a>     
+			</div>
+       </div>
+	   <div class="prod_blok">
+			<img src="img/2.png" alt="альтернативный текст"><br>
+			<div class="foot">
+				<input type="text" id="id-2" size="1" value="3000" name="3000" readonly><br>
+				<a class="minus increment" href="#">-</a>
+				<button>BUY</button>
+				<a class="plus increment" href="#">+</a>  
+			</div>
+       </div>
+	   <div class="prod_blok">
+			<img src="img/3.png" alt="альтернативный текст"><br>
+			<div class="foot">
+				<input type="text" id="id-3" size="1" value="3000" name="3000" readonly><br>
+				<a class="minus increment" href="#">-</a>
+				<button>BUY</button>
+				<a class="plus increment" href="#">+</a>          
+			</div>
+       </div>
+	   <div class="prod_blok">
+			<img src="img/4.png" alt="альтернативный текст"><br>
+			<div class="foot">
+				<input type="text" id="id-4" size="1" value="3000" name="3000" readonly><br>
+				<a class="minus increment" href="#">-</a>
+				<button>BUY</button>
+				<a class="plus increment" href="#">+</a> 
+			</div>
+       </div>
+	   <div class="prod_blok">
+			<img src="img/5.png" alt="альтернативный текст"><br>
+			<div class="foot">
+				<input type="text" id="id-5" size="1" value="3000" name="3000" readonly><br>
+				<a class="minus increment" href="#">-</a>
+				<button>BUY</button>
+				<a class="plus increment" href="#">+</a> 
+			</div>
+       </div>
+	   <div class="prod_blok">
+			<img src="img/6.png" alt="альтернативный текст"><br>
+			<div class="foot">
+				<input type="text" id="id-6" size="1" value="3000" name="3000" readonly><br>
+				<a class="minus increment" href="#">-</a>
+				<button>BUY</button>
+				<a class="plus increment" href="#">+</a> 
+			</div>
+       </div>
+	   
+	</div>
+	<div class="row">
+       <div class="prod_blok">
+			<img src="img/7.png" alt="альтернативный текст"><br>
+			<div class="foot">
+				<input type="text" id="id-7" size="1" value="3000" name="3000" readonly><br>
+				<a class="minus increment" href="#">-</a>
+				<button>BUY</button>
+				<a class="plus increment" href="#">+</a>     
+			</div>
+       </div>
+	   <div class="prod_blok">
+			<img src="img/8.png" alt="альтернативный текст"><br>
+			<div class="foot">
+				<input type="text" id="id-8" size="1" value="3000" name="3000" readonly><br>
+				<a class="minus increment" href="#">-</a>
+				<button>BUY</button>
+				<a class="plus increment" href="#">+</a>  
+			</div>
+       </div>
+	   <div class="prod_blok">
+			<img src="img/9.png" alt="альтернативный текст"><br>
+			<div class="foot">
+				<input type="text" id="id-9" size="1" value="3000" name="3000" readonly><br>
+				<a class="minus increment" href="#">-</a>
+				<button>BUY</button>
+				<a class="plus increment" href="#">+</a>          
+			</div>
+       </div>
+	   <div class="prod_blok">
+			<img src="img/10.png" alt="альтернативный текст"><br>
+			<div class="foot">
+				<input type="text" id="id-10" size="1" value="3000" name="3000" readonly><br>
+				<a class="minus increment" href="#">-</a>
+				<button>BUY</button>
+				<a class="plus increment" href="#">+</a> 
+			</div>
+       </div>
+	   <div class="prod_blok">
+			<img src="img/11.png" alt="альтернативный текст"><br>
+			<div class="foot">
+				<input type="text" id="id-11" size="1" value="3000" name="3000" readonly><br>
+				<a class="minus increment" href="#">-</a>
+				<button>BUY</button>
+				<a class="plus increment" href="#">+</a> 
+			</div>
+       </div>
+	   <div class="prod_blok">
+			<img src="img/12.png" alt="альтернативный текст"><br>
+			<div class="foot">
+				<input type="text" id="id-12" size="1" value="3000" name="3000" readonly><br>
+				<a class="minus increment" href="#">-</a>
+				<button>BUY</button>
+				<a class="plus increment" href="#">+</a> 
+			</div>
+       </div>
+	   
+	</div>
+
+<script type="text/javascript"> 
+   $(function(){   
+     $('.increment').click(function() {
+        var valueElement = $('#'+$(this).siblings('input').attr('id'));
+		var summa = parseInt($(valueElement).val());
+		var summa2 = $(valueElement).attr("name");
+
+        if($(this).hasClass('plus')) 
+        {
+           valueElement.val(Math.max(parseInt(valueElement.val()) + summa));
+        } 
+        else if (summa > summa2)
+        {
+           valueElement.val(Math.max(parseInt(valueElement.val()) - summa2));
+        } 
+	console.log(summa2)
+    return false;
+	 
+});
+
+});
+</script> 
+
+</body>
+</html>
